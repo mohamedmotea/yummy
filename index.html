@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon" href="img/logo.png">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="style/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <section class="load justify-content-center align-items-center">
+        <span class="loader"></span>
+    </section>
+
+    <section class="products py-5" id="products">
+        <div class="container">
+            <div class="row g-3 search-input justify-content-center d-none mb-5 position-relative z-1">
+                    <input class="col-md-5 mx-3 rounded" type="text" name="" data-type="s" id="searchName" placeholder="Search By Name">
+                    <input class="col-md-5 mx-3 rounded" type="text" name="" data-type="f" id="searchLetter" placeholder="Search By First Letter">
+            </div>
+          
+            <div class="row g-4" id="rowBody">
+            </div>
+        </div>
+    </section>
+
+    <section id="sidebar" class="sidebar d-flex">
+        <div class="option-side py-5 px-3 d-flex flex-column justify-content-between">
+            <ul>
+                <li><a id="searchSide" class="fs-5 fw-bold" href="#">Search</a> </li>
+                <li><a id="categorySide" class="fs-5 fw-bold" href="#">Categories</a> </li>
+                <li><a id="areaSide" class="fs-5 fw-bold" href="#">Area</a> </li>
+                <li><a id="ingredientsSide"class="fs-5 fw-bold" href="#">Ingredients</a> </li>
+                <li><a id="contactSide" class="fs-5 fw-bold" href="#">Contact Us</a> </li>
+
+            </ul>
+            <div class="side-footer">
+                <ul class="links-sidebar d-flex">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li class="mx-2"><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-solid fa-globe"></i></li>
+                </ul>
+                <p>Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <div class="option-toggle d-flex flex-column justify-content-between py-3 px-2 align-items-center">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <div id="openSide">
+                <i  class="option-open fa-solid fa-bars" role="button"></i>
+                <i  class="option-close fa-solid fa-close fs-3 d-none" role="button"></i>
+
+            </div>
+            <ul>
+                <li role="button"><i class="fa-solid fa-globe my-3"></i></li>
+                <li role="button"><i class="fa-solid fa-share-nodes"></i></li>
+            </ul>
+        </div>
+    </section>
+
+<section id="contact" class="contact py-5">
+    <div class="container d-flex align-items-center">
+        <form action="" id="form">
+            <div class="row w-75 mx-auto g-3 justify-content-center">
+               <div class="col-md-6 box">
+                <input id="nameInput" class="form-control mx-3 rounded" type="text" placeholder="Enter Your Name">
+                    <p class="bg-danger py-2 px-4 rounded text-center m-3 d-none">Special characters and numbers not allowed</p>
+               </div>
+               <div class="col-md-6 box">
+                <input id="emailInput" class="form-control mx-3 rounded" type="email" name="" placeholder="Enter Your Email">
+                <p class="bg-danger py-2 px-4 rounded text-center m-3 d-none">Email not valid *exemple@yyy.zzz</p>
+
+               </div>
+               <div class="col-md-6 box">
+                <input id="numInput" class="form-control mx-3 rounded" type="text" placeholder="Enter Your Phone">
+                <p  class="bg-danger py-2 px-4 rounded text-center m-3 d-none">Enter valid Phone Number</p>
+
+               </div>
+               <div class="col-md-6 box">
+                <input id="ageInput" class="form-control mx-3 rounded" type="number" placeholder="Enter Your Age">
+                <p  class="bg-danger py-2 px-4 rounded text-center m-3 d-none">Enter valid age</p>
+               </div>
+               <div class="col-md-6 box">
+                <input id="passInput" class="form-control mx-3 rounded" type="password" placeholder="Enter Your Password">
+                <p  class="bg-danger py-2 px-4 rounded text-center m-3 d-none">Enter valid password *Minimum eight characters, at least one letter and one number:*
+                </p>
+
+               </div>
+               <div class="col-md-6 box">
+                <input id="repassInput" class="form-control mx-3 rounded" type="password" placeholder="Repasword">
+                <p  class="bg-danger py-2 px-4 rounded text-center m-3 d-none">Enter valid repassword</p>
+
+               </div>
+               <div class="text-center mt-4">
+                   <button id="subminInput" class="btn btn-danger px-4" type="submit" disabled>Submit</button>
+
+               </div>
+            
+            </div>
+        </form>
+    </div>
+</section>
+
+
+    <section class="details p-5" id="details">
+    </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
