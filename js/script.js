@@ -103,7 +103,7 @@ $("#contactSide").click(_=>{
 
 
 // Function
-$(_=>{ $(".load").fadeOut(500);})
+$(_=>{ $(".load").fadeOut(800);})
 function getId(data) {
     $("#rowBody .col-md-3 .box").click((ev) => {
         const cardNum = ev.target.closest(".box").getAttribute("id");
